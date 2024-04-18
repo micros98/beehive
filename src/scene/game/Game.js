@@ -3,7 +3,7 @@
 //------------------------------------------------------------------------------
 
 /**
- * Creates a new object....
+ * Creates a new object.
  *
  * @constructor
  * @extends rune.scene.Scene
