@@ -16,6 +16,7 @@ beehive.Player = function(x, y, resource, controller) {
     // this.bulletTimer = 0;
     // this.bulletCooldown = 300;
     // this.walking = false;
+    //uuuu
 };
 
 beehive.Player.prototype = Object.create(rune.display.Sprite.prototype);
