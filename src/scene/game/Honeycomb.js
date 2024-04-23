@@ -3,11 +3,17 @@
 * @param {number, number, string}  
 */
 beehive.Honeycomb = function(x, y, resource) {
-    rune.display.Sprite.call(this, x, y, width, height, resource);
+    rune.display.Sprite.call(this, x, y, 20, 18, resource);
+    this.hitbox.set(0, 0, 18, 18);
+    this.debug = true;
 };
+
+beehive.Honeycomb.prototype = Object.create(rune.display.Sprite.prototype);
+beehive.Honeycomb.prototype.constructor = beehive.Honeycomb;
 
 beehive.Honeycomb.prototype.init = function() {
     rune.display.Sprite.prototype.init.call(this);
+
 };
 
 /**

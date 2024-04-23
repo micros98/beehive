@@ -110,14 +110,14 @@ beehive.scene.Game.prototype.initHoneycombs = function() {
     var y2 = 10;
 
     for (let i = 0; i < 7; i++) {
-        this.honeycomb = new rune.display.Sprite(10, y1, 20, 18, "honeycomb");
+        this.honeycomb = new beehive.Honeycomb(10, y1, "honeycomb");
         this.honeycombs1.push(this.honeycomb);
         y1 += 30;
         this.stage.addChild(this.honeycomb);
     }
 
     for (let j = 0; j < 7; j++) {
-        this.honeycomb = new rune.display.Sprite(365, y2, 20, 18, "honeycomb");
+        this.honeycomb = new beehive.Honeycomb(365, y2, "honeycomb");
         this.honeycomb.flippedX = true;
         this.honeycombs2.push(this.honeycomb);
         y2 += 30;
